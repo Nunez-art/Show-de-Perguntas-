@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do Milhão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>SHOW DO LISÃO DA TURMA 3C</h1>
+            <div class="prize-panel">
+                <div class="prize-box stop">Parar: <span id="stop-prize">R$ 0</span></div>
+                <div class="prize-box current">Valendo: <span id="current-prize">R$ 1.000</span></div>
+                <div class="prize-box wrong">Errar: <span id="wrong-prize">R$ 0</span></div>
+            </div>
+        </header>
+
+        <main id="quiz-area">
+            <div class="question-box">
+                <p id="question-text">Carregando pergunta...</p>
+            </div>
+
+            <div class="options-grid" id="options-container">
+                <button class="option-btn" data-index="0"><span class="letter">1</span> <span class="text"></span></button>
+                <button class="option-btn" data-index="1"><span class="letter">2</span> <span class="text"></span></button>
+                <button class="option-btn" data-index="2"><span class="letter">3</span> <span class="text"></span></button>
+                <button class="option-btn" data-index="3"><span class="letter">4</span> <span class="text"></span></button>
+            </div>
+
+            <div class="controls">
+                <button id="btn-skip" class="control-btn">Pular (<span id="skips-left">3</span>)</button>
+                <button id="btn-stop" class="control-btn">Parar</button>
+            </div>
+        </main>
+
+        <div id="end-screen" class="hidden">
+            <h2 id="end-title">Fim de Jogo!</h2>
+            <p id="end-message">Você ganhou: R$ 0</p>
+            <button id="btn-restart" class="restart-btn">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
